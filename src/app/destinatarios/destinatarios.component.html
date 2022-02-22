@@ -1,0 +1,25 @@
+<h1>Destinatarios</h1>
+<br><br>
+
+
+<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre Destinatario/th>
+          <th scope="col">Direccion</th>
+          <th scope="col">Pais ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of destinatarios">
+          <th scope="row"> {{ d.ID }}</th>
+          <td>{{ d.NomDestinatario }}</td>
+          <td>{{ d.Direccion }}</td>
+          <td>{{ d.PaisID }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

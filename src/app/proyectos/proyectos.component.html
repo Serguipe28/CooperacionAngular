@@ -1,0 +1,25 @@
+<h1>Proyectos</h1>
+<br><br>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre Proyecto</th>
+        <th scope="col">ID Destinatario</th>
+        <th scope="col">ID ODS</th>
+        <th scope="col">Fecha de Inicio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of proyectos">
+        <th scope="row"> {{ p.ID }}</th>
+        <td>{{ p.NomProyecto }}</td>
+        <td>{{ p.DestinatarioID }}</td>
+        <td>{{ p.ODSID }}</td>
+        <td>{{ p.FechaInicio }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

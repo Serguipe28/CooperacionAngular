@@ -1,0 +1,25 @@
+<h1>ODS</h1>
+<br><br>
+
+
+<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre ODS/th>
+          <th scope="col">Foto</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let o of ods">
+          <th scope="row"> {{ o.ID }}</th>
+          <td>{{ o.NomODS }}</td>
+          <td>{{ o.Foto }}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

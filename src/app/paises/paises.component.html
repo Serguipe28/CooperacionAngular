@@ -1,0 +1,25 @@
+<h1>Paises</h1>
+
+
+
+<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre Pais/th>
+          <th scope="col">Bandera</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of paises">
+          <th scope="row"> {{ p.ID }}</th>
+          <td>{{ p.NomPais }}</td>
+          <td>{{ p.Bandera }}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
