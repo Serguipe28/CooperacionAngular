@@ -1,0 +1,28 @@
+
+<div class="col-2">
+    <app-ods-list (globalSelected)="ODSchange($event)"></app-ods-list>
+    <br>
+    <app-destinatarios-list (globalSelected)="DestinatarioChange($event)"></app-destinatarios-list>
+</div>
+<div class="row justify-content-md-center">
+    <div class="col-8">
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre Proyecto</th>
+            <th scope="col">Fecha de inicio </th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let p of proyectos">
+            <tr *ngIf="(ODSSelected == p.ODSID && DestinatarioSelected == p.DestinatarioID)  ">
+              <th scope="row"> {{ p.ID }}</th>
+              <td>{{ p.NomProyecto  }}</td>
+              <td>{{ p.FechaInicio }}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>

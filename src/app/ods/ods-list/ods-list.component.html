@@ -1,0 +1,10 @@
+
+
+<select class="form-select" aria-label="Default select example" name="ods" id="ods" [(ngModel)]=" odsSelected" (change)="onChange()" >
+    <ng-container *ngFor="let o of ods">
+        <option value="{{ o.ID}}"> {{ o.NomODS }}</option>
+
+    </ng-container>
+    
+
+</select>
